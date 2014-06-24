@@ -13,6 +13,7 @@ exports.handler = function(options) {
 
   return restify.CORS({
     origins: options.origins,
+    credentials: true,
     headers: options.exposeHeaders
   });
 
